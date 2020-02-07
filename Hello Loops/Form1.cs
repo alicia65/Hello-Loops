@@ -23,7 +23,7 @@ namespace Hello_Loops
 
             while(selected == DialogResult.Yes)
             {
-                selected = MessageBox.Show("Here's a MessageBox. Do you want another?", "while", MessageBoxButtons.YesNo);
+                selected = MessageBox.Show("Here's a MessageBox. Do you want another?", "While", MessageBoxButtons.YesNo);
             }
 
         }
@@ -40,7 +40,17 @@ namespace Hello_Loops
 
         private void btnFor_Click(object sender, EventArgs e)
         {
+
             for(int m = 0; m < 5; m++)
+            {
+                MessageBox.Show("Here's MessageBox" + m);
+            }
+        }
+
+        private void txtForLoop_Scroll(object sender, EventArgs e)
+        {
+
+            for (int m = 0; m < 5; m++)
             {
                 MessageBox.Show("Here's MessageBox" + m);
             }
