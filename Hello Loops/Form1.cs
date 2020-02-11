@@ -12,6 +12,8 @@ namespace Hello_Loops
 {
     public partial class Form1 : Form
     {
+        private readonly object txtForLoop;
+
         public Form1()
         {
             InitializeComponent();
@@ -40,8 +42,10 @@ namespace Hello_Loops
 
         private void btnFor_Click(object sender, EventArgs e)
         {
-
-            for(int m = 0; m < 5; m++)
+            txtForLoop tfloop = new txtForLoop();// create instance of txtForLoop
+            
+            txtForLoop.ToString(tfloop);
+            for(int m = 0; m < txtForLoop; m++)
             {
                 MessageBox.Show("Here's MessageBox" + m);
             }
@@ -49,11 +53,7 @@ namespace Hello_Loops
 
         private void txtForLoop_Scroll(object sender, EventArgs e)
         {
-
-            for (int m = 0; m < 5; m++)
-            {
-                MessageBox.Show("Here's MessageBox" + m);
-            }
+            trkForLoop.Text = "" + trkForLoop.Value;  //show value in track for loop        
         }
     }
 }
