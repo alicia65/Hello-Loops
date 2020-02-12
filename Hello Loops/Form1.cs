@@ -42,10 +42,11 @@ namespace Hello_Loops
 
         private void btnFor_Click(object sender, EventArgs e)
         {
-
-            for (int m = 0; m < trkForLoop.Value; m++)/*user moves and sets trackbar by moving it left to right. 
-                Furthermore, when user clicks on the for button, message window displays number of time the message will be appearing on the window
-                base on the value during setting phase. */
+            /*user moves and sets trackbar by moving it left to right. 
+            Furthermore, when user clicks on the for button, message window displays number 
+            of time the message will be appearing on the window
+            base on the value during setting phase. */
+            for (int m = 0; m < trkForLoop.Value; m++)
             {
                 MessageBox.Show("Here's MessageBox" + m);
             }
