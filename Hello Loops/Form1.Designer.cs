@@ -69,7 +69,7 @@
             // 
             this.trkForLoop.AutoSize = false;
             this.trkForLoop.Location = new System.Drawing.Point(211, 149);
-            this.trkForLoop.Maximum = 5;
+            this.trkForLoop.Maximum = 6;
             this.trkForLoop.Name = "trkForLoop";
             this.trkForLoop.Size = new System.Drawing.Size(104, 58);
             this.trkForLoop.TabIndex = 3;

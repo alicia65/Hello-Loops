@@ -42,18 +42,18 @@ namespace Hello_Loops
 
         private void btnFor_Click(object sender, EventArgs e)
         {
-            txtForLoop tfloop = new txtForLoop();// create instance of txtForLoop
-            
-            txtForLoop.ToString(tfloop);
-            for(int m = 0; m < txtForLoop; m++)
+
+            for (int m = 0; m < trkForLoop.Value; m++)/*user moves and sets trackbar by moving it left to right. 
+                Furthermore, when user clicks on the for button, message window displays number of time the message will be appearing on the window
+                base on the value during setting phase. */
             {
                 MessageBox.Show("Here's MessageBox" + m);
             }
         }
 
-        private void txtForLoop_Scroll(object sender, EventArgs e)
+        private void trkForLoop_Scroll(object sender, EventArgs e)
         {
-            trkForLoop.Text = "" + trkForLoop.Value;  //show value in track for loop        
+            trkForLoop.Text = "" + trkForLoop.Value;  //show value in track the for loop        
         }
     }
 }
